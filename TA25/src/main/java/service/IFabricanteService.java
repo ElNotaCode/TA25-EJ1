@@ -11,10 +11,10 @@ public interface IFabricanteService {
 	
 	public Fabricante guardarFabricante(Fabricante fabricante); //CREATE
 	
-	public Fabricante readFabricante(Long id); //READ
+	public Fabricante readFabricante(Long codigo_fabricante); //READ
 	
 	public Fabricante actualizarFabricante(Fabricante fabricante); //UPDATE
 	
-	public void eliminarFabricante(Long id);//DELETE
+	public void eliminarFabricante(Long codigo_fabricante);//DELETE
 	
 }

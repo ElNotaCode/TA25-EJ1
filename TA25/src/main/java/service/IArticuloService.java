@@ -12,11 +12,11 @@ public interface IArticuloService {
 	
 	public Articulo guardarArticulo(Articulo articulo); //CREATE
 	
-	public Articulo readArticulo(Long id); //READ
+	public Articulo readArticulo(Long codigo_articulo); //READ
 	
 	public Articulo actualizarArticulo(Articulo articulo); //UPDATE
 	
-	public void eliminarArticulo(Long id);//DELETE
+	public void eliminarArticulo(Long codigo_articulo);//DELETE
 	
 	
 }
