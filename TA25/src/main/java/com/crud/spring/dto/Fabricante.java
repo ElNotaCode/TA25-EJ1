@@ -1,11 +1,18 @@
 package com.crud.spring.dto;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "fabricantes")
@@ -16,6 +23,10 @@ public class Fabricante {
 	private Long codigo_fabricante;
 	@Column(name = "nombre")
 	private String nombre;
+	
+	@OneToMany
+	@JoinColumn(name="codigo_articulo")
+	private List<Articulo> articulo;
 	
 	public Fabricante() {
 
@@ -42,9 +53,20 @@ public class Fabricante {
 		this.nombre = nombre;
 	}
 
+	@JsonIgnore
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Articulo")
+	public List<Articulo> getArticulo() {
+		return articulo;
+	}
+
+	public void setArticulo(List<Articulo> articulo) {
+		this.articulo = articulo;
+	}
+
 	@Override
 	public String toString() {
-		return "Fabricante [codigo_fabricante=" + codigo_fabricante + ", nombre=" + nombre + "]";
+		return "Fabricante [codigo_fabricante=" + codigo_fabricante + ", nombre=" + nombre + ", articulo=" + articulo
+				+ "]";
 	}
 	
 }
