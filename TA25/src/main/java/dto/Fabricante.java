@@ -5,11 +5,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "fabricantes")
-public class Fabricantes {
+public class Fabricante {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)//busca ultimo valor e incrementa desde id final de db
@@ -17,11 +19,11 @@ public class Fabricantes {
 	@Column(name = "nombre")
 	private String nombre;
 	
-	public Fabricantes() {
+	public Fabricante() {
 
 	}
 	
-	public Fabricantes(long codigo_fabricante, String nombre) {
+	public Fabricante(long codigo_fabricante, String nombre) {
 		this.codigo_fabricante = codigo_fabricante;
 		this.nombre = nombre;
 	}
