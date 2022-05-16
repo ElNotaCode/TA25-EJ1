@@ -15,7 +15,7 @@ public class Articulo {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)//busca ultimo valor e incrementa desde id final de db
-	private long codigo_articulo;
+	private Long codigo_articulo;
 	@Column(name = "nombre")
 	private String nombre;
 	@Column(name = "precio")
@@ -29,7 +29,7 @@ public class Articulo {
 
 	}
 
-	public Articulo(long codigo_articulo, String nombre, int precio, Fabricante fabricante) {
+	public Articulo(Long codigo_articulo, String nombre, int precio, Fabricante fabricante) {
 		//super();
 		this.codigo_articulo = codigo_articulo;
 		this.nombre = nombre;
@@ -37,11 +37,11 @@ public class Articulo {
 		this.fabricante = fabricante;
 	}
 
-	public long getCodigo_articulo() {
+	public Long getCodigo_articulo() {
 		return codigo_articulo;
 	}
 
-	public void setCodigo_articulo(long codigo_articulo) {
+	public void setCodigo_articulo(Long codigo_articulo) {
 		this.codigo_articulo = codigo_articulo;
 	}
 
