@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.crud.spring.dto.Fabricante;
 import com.crud.spring.service.FabricantesServiceImpl;
-import com.crud.spring.service.IFabricanteService;
 
 @RestController
 @RequestMapping("/api")

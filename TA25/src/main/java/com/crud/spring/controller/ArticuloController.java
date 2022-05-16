@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.crud.spring.dto.Articulo;
-import com.crud.spring.dto.Fabricante;
 import com.crud.spring.service.ArticulosServiceImpl;
 
 @RestController
