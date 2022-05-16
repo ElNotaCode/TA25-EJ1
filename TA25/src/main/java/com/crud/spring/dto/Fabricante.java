@@ -1,4 +1,4 @@
-package dto;
+package com.crud.spring.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -40,6 +40,11 @@ public class Fabricante {
 	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	@Override
+	public String toString() {
+		return "Fabricante [codigo_fabricante=" + codigo_fabricante + ", nombre=" + nombre + "]";
 	}
 	
 }

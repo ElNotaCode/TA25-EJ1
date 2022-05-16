@@ -1,8 +1,8 @@
-package dao;
+package com.crud.spring.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import dto.Fabricante;
+import com.crud.spring.dto.Fabricante;
 
 public interface IFabricanteDAO extends JpaRepository<Fabricante, Long>{
 

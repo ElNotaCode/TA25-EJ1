@@ -1,11 +1,11 @@
-package service;
+package com.crud.spring.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import dao.IArticuloDAO;
-import dto.Articulo;
+import com.crud.spring.dao.IArticuloDAO;
+import com.crud.spring.dto.Articulo;
 
 public class ArticulosServiceImpl implements IArticuloService{
 

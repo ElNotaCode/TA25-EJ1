@@ -1,8 +1,8 @@
-package service;
+package com.crud.spring.service;
 
 import java.util.List;
 
-import dto.Articulo;
+import com.crud.spring.dto.Articulo;
 
 public interface IArticuloService {
 

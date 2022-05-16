@@ -1,11 +1,11 @@
-package service;
+package com.crud.spring.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import dao.IFabricanteDAO;
-import dto.Fabricante;
+import com.crud.spring.dao.IFabricanteDAO;
+import com.crud.spring.dto.Fabricante;
 
 public class FabricantesServiceImpl implements IFabricanteService {
 

@@ -1,8 +1,8 @@
-package service;
+package com.crud.spring.service;
 
 import java.util.List;
 
-import dto.Fabricante;
+import com.crud.spring.dto.Fabricante;
 
 public interface IFabricanteService {
 
